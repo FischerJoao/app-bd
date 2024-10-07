@@ -8,15 +8,12 @@ export interface MenuItemProps {
   url: string;
 }
 
-function MenuItem({ icone: Icon, texto, url }: MenuItemProps) {
+export default function MenuItem(props: MenuItemProps) {
   return (
-    <Link href={url} className="flex gap-2 px-4 py-2 hover:bg-zinc-800">
-      <div className="flex items-center gap-2">
-        <Icon size={24} stroke={1} />
-        <span>{texto}</span>
-      </div>
+    <Link href={props.url} className="flex gap-2 px-4 py-2 hover:bg-zinc-800">
+        <props.icone/>
+        <span className="" >{props.texto}</span>
+
     </Link>
   );
 }
-
-export default MenuItem;
