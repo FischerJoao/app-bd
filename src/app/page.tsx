@@ -3,6 +3,6 @@ import Pagina from "./components/template/Pagina";
 
 export default function Home() {
   return (
-   <Pagina children={undefined}></Pagina>
+   <Pagina>Opa</Pagina>
   );
 }
