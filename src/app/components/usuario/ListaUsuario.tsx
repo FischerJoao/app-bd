@@ -3,7 +3,7 @@ import LinhaUsuario from "./LinhaUsuario";
 
 export default function ListaUsuario() {
     return (
-        <div className="flex flex-col gap-4 ">{usuarios.map((usuario, i) => {
+        <div className="flex flex-col p-1 gap-5 ">{usuarios.map((usuario, i) => {
             return <LinhaUsuario key={usuario.id} usuario={usuario} />
         })}</div>
     )
